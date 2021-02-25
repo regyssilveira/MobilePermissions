@@ -1,5 +1,7 @@
 # MobilePermissions
 This is a component to turn more easy the request permission in Android 8.x or later
+# Before Installed
+Make sure you have uninstalled any previous versions of the component before installing a new one.
 
 # How to install?
 
@@ -112,6 +114,32 @@ end;
 
 
 
+# Addicional Notes about bug fixes and tips
+
+Error:
+"" is not a integer value.<br><br>
+
+If you still receive this error after install the new version, follow next steps:<br><br>
+
+
+a. Access Project > Options > Building > Delphi Compiler<br>
+b. Modify the Target to Android32 and/or Android64<br>
+c. Add this folders path into Search Path field like bellow:<br><br>
+
+\MobilePermissions\source<br>
+\MobilePermissions\component<br><br>
+
+E.g.<br>
+C:\Componentes\MobilePermissions\source<br>
+C:\Componentes\MobilePermissions\component<br><br>
+
+Recompile and redistrbuilt your project and e voilà<br><br>
+
+Tests executed in:<br>
+Android 7.0 (This version dosen't need this component, but can you use without problem)<br>
+Android 8.x<br>
+Android 9.x<br>
+Android 10<br>
 
 
 
