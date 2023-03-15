@@ -93,6 +93,9 @@
         <AUP_INSTALL_SHORTCUT>true</AUP_INSTALL_SHORTCUT>
         <AUP_INSTANT_APP_FOREGROUND_SERVICE>true</AUP_INSTANT_APP_FOREGROUND_SERVICE>
         <AUP_INTERNET>true</AUP_INTERNET>
+        <DCC_DcpOutput>D:\Delphi\MobilePermissions\lib\Win32\</DCC_DcpOutput>
+        <DCC_BplOutput>D:\Delphi\MobilePermissions\lib\Win32\</DCC_BplOutput>
+        <DCC_DcuOutput>D:\Delphi\MobilePermissions\lib\Win32\</DCC_DcuOutput>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Base_Android)'!=''">
         <VerInfo_Keys>package=com.embarcadero.$(MSBuildProjectName);label=$(MSBuildProjectName);versionCode=1;versionName=1.0.0;persistent=False;restoreAnyVersion=False;installLocation=auto;largeHeap=False;theme=TitleBar;hardwareAccelerated=true;apiKey=</VerInfo_Keys>
@@ -215,7 +218,8 @@
                     <Source Name="MainSource">MobilePermissions.dpk</Source>
                 </Source>
                 <Excluded_Packages>
-                    <Excluded_Packages Name="C:\Users\adria\OneDrive\Documentos\Embarcadero\Studio\22.0\CatalogRepository\ADRFirebase\bpl\pkgADRFirebaseAuthentication.bpl">File C:\Users\adria\OneDrive\Documentos\Embarcadero\Studio\22.0\CatalogRepository\ADRFirebase\bpl\pkgADRFirebaseAuthentication.bpl not found</Excluded_Packages>
+                    <Excluded_Packages Name="$(BDSBIN)\dcloffice2k280.bpl">Microsoft Office 2000 Sample Automation Server Wrapper Components</Excluded_Packages>
+                    <Excluded_Packages Name="$(BDSBIN)\dclofficexp280.bpl">Microsoft Office XP Sample Automation Server Wrapper Components</Excluded_Packages>
                 </Excluded_Packages>
             </Delphi.Personality>
             <Deployment Version="4">
